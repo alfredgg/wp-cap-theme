@@ -1,5 +1,5 @@
 			<header id="header" class="skel-layers-fixed">
-				<h1><a href="#"><?php bloginfo('name'); ?></a></h1>
+				<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="#contact">Contact</a></li>

@@ -19,21 +19,23 @@
 
 	<body id="top">
 
-<!-- Header -->
-<?php get_header(); ?>
+	<!-- Header -->
+	<?php get_header(); ?>
 
-<?php if (is_front_page()) {  ?>
-<!-- Banner -->
-<section id="banner">
-		<img src="<?php header_image(); ?>" alt="" />
-</section>
-<?php } ?>
+	<?php if (is_front_page()):  ?>
+	<!-- Banner -->
+	<section id="banner">
+			<img src="<?php header_image(); ?>" alt="" />
+	</section>
+	<?php endif; ?>
 
 		<!-- One -->
 			<section id="one" class="wrapper style1">
 
 				<header class="major">
+					<?php if (is_front_page()):  ?>
 					<h3><?php bloginfo('description'); ?></h3>
+					<?php endif; ?>
 					<p>
 					<?php
 						while ( have_posts() ) : the_post(); 
@@ -55,11 +57,11 @@
 					<?php if ($i % 3 == 0): ?>
 					<div class="row">
 					<?php endif; ?>
-						<div class="4u">
+						<div class="4u" onclick="location.href='<?php the_permalink(); ?>';" style="cursor: pointer;">
 							<section class="special box">
 								<?php if ( has_post_thumbnail() ): ?>
 									<?php $image_src = wp_get_attachment_image_src( get_post_thumbnail_id(),'full' ); ?>
-									<a href="#" class="image fit"><img src="<?php echo $image_src[0] ?>" alt="" /></a>
+									<span class="image fit"><img src="<?php echo $image_src[0] ?>" alt="" /></span>
 								<?php endif; ?>
 								<h3><?php the_title(); ?></h3>
 							</section>
