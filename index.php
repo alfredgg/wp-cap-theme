@@ -92,7 +92,7 @@
 					</div>
 					<ul class="copyright">
 						<li>This page was designed with love</li>
-						<li>Source code on <a class="icon" href="#">GitHub <i class="fa fa-github"></i></a></li>
+						<li>Source code on <a class="icon" href="http://github.com/alfredgg/wp-cap-theme">GitHub <i class="fa fa-github"></i></a></li>
 					</ul>
 				</div>
 			</footer>
