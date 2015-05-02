@@ -84,7 +84,22 @@
 				<div class="container">
 					<div class="row double">
 						<div class="6u">
-						&nbsp;
+							<h2>Site map</h2>
+							<ul class="alt">
+								<?php $args = array(
+									'child_of'     => get_option('page_on_front'),
+									'post_type'    => 'page',
+									'post_status'  => 'publish',
+									'title_li'     => '', 
+								); ?>
+								<?php $children = wp_list_pages( $args ); ?>
+								<?php if ($children) : ?>
+								<ul>
+								<?php echo   $children; ?>
+								</ul>
+								<?php endif; ?>
+
+							</ul>
 						</div>
 						<div class="6u">
 							<?php get_footer(); ?>
