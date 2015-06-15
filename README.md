@@ -1,5 +1,5 @@
 wp-cap-theme
 ============
 
-My first WordPress theme. It changes the look&amp;feel of a blog ann like a portfolio. You can see an example at: http://davidberga.cat/ 
+A WordPress theme that changes the look and feel of a simple blog showing it like a personal portfolio. You can see an example at: http://davidberga.cat/ 
 
