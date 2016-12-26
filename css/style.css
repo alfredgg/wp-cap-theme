@@ -136,6 +136,29 @@
 			padding: 1em 1.5em;
 		}
 
+	.languages {
+		margin-top: 57px;
+		z-index: 10;  
+		position: absolute;  
+		right: 0;  
+		top: 0;
+		background-color: white;
+		font-size: 75%;
+	}
+
+	.languages li {
+		border-radius: 6px;
+		display: inline-block;
+		margin-left: 2em;
+		margin-right: 2em;
+		padding-left: 0;
+	}
+
+	.languages a {
+		color: #555f66;
+		text-decoration: none;
+	}
+
 	.align-left {
 		text-align: left;
 	}

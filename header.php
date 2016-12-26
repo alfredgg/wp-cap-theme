@@ -19,4 +19,8 @@
 
 					</ul>
 				</nav>
+
+				<div class="languages">
+				<?php pll_the_languages( array( 'hide_if_empty' => 1) ); ?>
+				</div>
 			</header>
